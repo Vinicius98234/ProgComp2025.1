@@ -1,10 +1,10 @@
 import random
 
-# Sorteia o número secreto
-nsecreto = random.randint(1, 100)
-
 limiteinf = 1
 limitesup = 100
+
+# Sorteia o número secreto
+nsecreto = random.randint(limiteinf, limitesup)
 
 print("Tente adivinhar o número entre 1 e 100. Você tem 4 tentativas!")
 
