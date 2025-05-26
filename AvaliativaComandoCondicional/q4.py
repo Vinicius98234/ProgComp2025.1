@@ -1,60 +1,57 @@
-# Lê dia e mês inicial!
-dia_ini = int(input("Digite o dia inicial: "))
-mes_ini = int(input("De qual mês: "))
-# Transformando a data inicial em dias julianos!
-if mes_ini == 1:
-    dia_ju_ini = 334 + dia_ini  
-if mes_ini == 2:
-    dia_ju_ini = 304 + dia_ini   
-if mes_ini == 3:
-    dia_ju_ini = 273 + dia_ini   
-if mes_ini == 4:
-    dia_ju_ini = 243 + dia_ini   
-if mes_ini == 5:
-    dia_ju_ini = 212 + dia_ini   
-if mes_ini == 6:
-    dia_ju_ini = 181 + dia_ini   
-if mes_ini == 7:
-    dia_ju_ini = 151 + dia_ini   
-if mes_ini == 8:
-    dia_ju_ini = 120 + dia_ini   
-if mes_ini == 9:
-    dia_ju_ini = 90 + dia_ini    
-if mes_ini == 10:
-    dia_ju_ini = 59 + dia_ini    
-if mes_ini == 11:
-    dia_ju_ini = 31 + dia_ini    
-if mes_ini == 12:
-    dia_ju_ini = dia_ini         
+dia_inicio = int(input("Digite o dia inicial: "))
+mes_inicio = int(input("De qual mês: "))
 
-# Lê dia e mês final!
-dia_fin = int(input("Digite o dia final: "))
-mes_fin = int(input("De qual mês: "))
-# Transformando a data final em dias julianos!
-if mes_fin == 1:
-    dia_ju_fin = 334 + dia_fin
-if mes_fin == 2:
-    dia_ju_fin = 304 + dia_fin
-if mes_fin == 3:
-    dia_ju_fin = 273 + dia_fin
-if mes_fin == 4:
-    dia_ju_fin = 243 + dia_fin
-if mes_fin == 5:
-    dia_ju_fin = 212 + dia_fin
-if mes_fin == 6:
-    dia_ju_fin = 181 + dia_fin
-if mes_fin == 7:
-    dia_ju_fin = 151 + dia_fin
-if mes_fin == 8:
-    dia_ju_fin = 120 + dia_fin
-if mes_fin == 9:
-    dia_ju_fin = 90 + dia_fin
-if mes_fin == 10:
-    dia_ju_fin = 59 + dia_fin
-if mes_fin == 11:
-    dia_ju_fin = 31 + dia_fin
-if mes_fin == 12:
-    dia_ju_fin = dia_fin
+if mes_inicio == 1:
+    total_inicio = 334 + dia_inicio
+if mes_inicio == 2:
+    total_inicio = 304 + dia_inicio
+if mes_inicio == 3:
+    total_inicio = 273 + dia_inicio
+if mes_inicio == 4:
+    total_inicio = 243 + dia_inicio
+if mes_inicio == 5:
+    total_inicio = 212 + dia_inicio
+if mes_inicio == 6:
+    total_inicio = 181 + dia_inicio
+if mes_inicio == 7:
+    total_inicio = 151 + dia_inicio
+if mes_inicio == 8:
+    total_inicio = 120 + dia_inicio
+if mes_inicio == 9:
+    total_inicio = 90 + dia_inicio
+if mes_inicio == 10:
+    total_inicio = 59 + dia_inicio
+if mes_inicio == 11:
+    total_inicio = 31 + dia_inicio
+if mes_inicio == 12:
+    total_inicio = dia_inicio
 
-# Exibe o resultado!
-print("Passaram-se", abs(dia_ju_fin - dia_ju_ini), "dias, entre", dia_ini, "do", mes_ini, "até", dia_fin, "do", mes_fin)
+dia_fim = int(input("Digite o dia final: "))
+mes_fim = int(input("De qual mês: "))
+
+if mes_fim == 1:
+    total_fim = 334 + dia_fim
+if mes_fim == 2:
+    total_fim = 304 + dia_fim
+if mes_fim == 3:
+    total_fim = 273 + dia_fim
+if mes_fim == 4:
+    total_fim = 243 + dia_fim
+if mes_fim == 5:
+    total_fim = 212 + dia_fim
+if mes_fim == 6:
+    total_fim = 181 + dia_fim
+if mes_fim == 7:
+    total_fim = 151 + dia_fim
+if mes_fim == 8:
+    total_fim = 120 + dia_fim
+if mes_fim == 9:
+    total_fim = 90 + dia_fim
+if mes_fim == 10:
+    total_fim = 59 + dia_fim
+if mes_fim == 11:
+    total_fim = 31 + dia_fim
+if mes_fim == 12:
+    total_fim = dia_fim
+
+print("Passaram-se", abs(total_fim - total_inicio), "dias, entre", dia_inicio, "do", mes_inicio, "até", dia_fim, "do", mes_fim)
